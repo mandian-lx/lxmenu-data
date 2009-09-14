@@ -1,7 +1,7 @@
 Summary:	Menu data files for LXDE
 Name:     	lxmenu-data
 Version:	0.1
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2+
 Group:		Graphical desktop/Other
 Source0: 	http://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
