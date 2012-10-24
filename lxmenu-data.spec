@@ -1,14 +1,13 @@
 Summary:	Menu data files for LXDE
 Name:     	lxmenu-data
 Version:	0.1.2
-Release:	%mkrel 1
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Other
-Source0: 	http://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
+Source0: 	http://dfn.dl.sourceforge.net/sourceforge/lxde/%{name}-%{version}.tar.gz
 URL:		http://lxde.sourceforge.net/
 BuildRequires:	intltool
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 This package provides files required to build freedesktop.org menu
@@ -25,13 +24,8 @@ modifications were made.
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
-%defattr(-, root, root)
 %{_datadir}/desktop-directories/lxde-*.directory
 %{_sysconfdir}/xdg/menus/lxde-applications.menu
