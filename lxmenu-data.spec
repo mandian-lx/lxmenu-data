@@ -6,7 +6,7 @@ Version:	0.1.3
 Release:	0.%git.1
 Source0:	%{name}-%{git}.tar.xz
 %else
-Release:	1
+Release:	2
 Source0:	http://dfn.dl.sourceforge.net/sourceforge/lxde/%{name}-%{version}.tar.gz
 %endif
 License:	GPLv2+
